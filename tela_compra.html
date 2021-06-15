@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Comprar</title>
+
+        <!-- Bootstrap CSS CDN
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+         -->
+
+        <!--Bootstrap CSS LOCAL-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        
+        <!--[if lt IE 9]>
+	        <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+    <body>
+        <!-- Conteúdo do cabeçalho-->
+        <header class="container-padrao">
+
+            <h1 class="logotipo"><a href="index.html"><img src="img/logo.png" alt="Mirror Fashion" title="Mirror Fashion"></a></h1>
+            
+            <p class="sacola"><button type="button" class="btn btn-dark"><a href ="sobre.html">Mirror Fashion</br></a></button>
+
+              <div class="menu-opcoes">
+                <ul>
+                   <l1><a href="index.html"> <button type="button" class="btn btn-warning">Principal</a></button></l1>
+                   <l1><a href="#"> <button type="button" class="btn btn-warning">Lista de desejos</a></button></l1>
+                   <l1><a href="tela_de_login.html"> <button type="button" class="btn btn-warning">Login</a></button></l1>
+                   <l1><a href="sobre.html"> <button type="button" class="btn btn-warning">Sobre</a></button></l1>
+                   <l1><a href="#"> <button type="button" class="btn btn-warning">Contato</a></button></l1>
+                   <l1><a href="Cadastro.html"> <button type="button" class="btn btn-warning">Cadastre-se</a></button></l1>
+                </ul>
+            </div>
+        </header>
+        <!-- FIM Conteúdo do cabeçalho-->
+        
+        <!-- Conteúdo principal-->
+        <main id="conteudo" class="container-padrao">
+            
+            <!-- Área  principal da página-->
+            <div id="principal" >
+                <section class="busca">
+                    <div class="menu-busca" id="busca">
+                        <form action="https://www.google.com/search" method="get">
+                            <input type="text" name="q" size="15">
+                            <button> </button>
+                        </form>
+                    </div>
+                </section>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">E-mail</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu login/e-mail">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Tipo de pagamento</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Boleto</option>
+                        <option>Cartão de crédito</option>
+                        <option>Cartão de débito</option>
+                        <option>Pix</option>
+                        <option>Depósito bancário</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect2">Tipo de cartão</label>
+                      <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>Nubank</option>
+                        <option>PagSeguro</option>
+                        <option>PayPal</option>
+                        <option>Cartão Itaú</option>
+                        <option>Cartão Caixa</option>
+                     
+                    </select>
+        
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Número do cartão</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                     <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Confirmar
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Deseja finalziar a compra?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="submit" class="btn btn-dark"><a href ="finalizar_compra.html">Comprar</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                  
+                </form>
+
+
+
+
+
+
+
+                <footer id="rodape">
+                    <section class="container-padrao">
+                        <img src="img/logo-rodape.png" alt="logo-rodape.png"> 
+                        &copy copyright Mirror Fashion 2021    
+                        <ul class="redes-sociais">
+                            <li><a href="https://plus.google.com">Google +</a></li>
+                            <li><a href="https://facebook.com">Facebook</a></li>
+                            <li><a href="https://twitter.com">Twitter</a></li>
+                            <li><a href="https://instagram.com">Instagram</a></li>
+                        </ul>
+                    </section>
+                </footer>
+                <!-- FIM do Conteúdo do rodapé--> 
+            </body>
+            <!-- Bootstrap CDN
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+            -->
+        
+            <!--Bootstrap Local-->
+            <script src="js/jquery-3.5.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script>
+                $('.carousel').carousel({
+                    interval: 3000,
+                    pause: 'hover'
+                    
+                })
+            </script>
+        
+        </html>
+        
